@@ -1,0 +1,360 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+body{
+    background: rgb(165, 165, 165);
+    height: 100vh;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 10fr;
+}
+nav{
+    padding: 5px;
+    background: rgb(18, 123, 243);
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.nav-left,.nav-right{
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    gap: 30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+header{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+}
+.header-left{
+    padding: 20px;
+    grid-column: 1/2;
+    background: rgb(185, 226, 181);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+h4{
+    margin-left: 10px;
+}
+.header-right{
+    grid-column: 2/5;
+    background: rgba(51, 7, 248, 0.719);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+aside{
+    /* background: rgb(255, 54, 54); */
+    grid-column: 1/2;
+}
+input{
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+.aside{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    color: rgb(18, 123, 243);
+}
+.menu-contant{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+}
+button{
+    background: rgb(18, 123, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.icons-contant{
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    justify-content: flex-start;
+}
+.lol{
+    display: flex;
+    align-items: center;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.tech{
+    padding-left: 10px;
+    font-size: 16px;
+}
+hr{
+    margin: 10px;
+    width: 90%;
+}
+main{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 4fr 10fr 4fr;
+    padding: 20px;
+    gap: 20px;
+}
+.main-top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column: 1/4;
+    gap: 20px;
+
+}
+.top-left{
+
+    display: grid;
+    gap: 2px;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.inform{
+    display: flex;
+    height: 100%;
+}
+.right{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.now{
+    border-radius: 5px 0 0 0;
+}
+.late{
+    border-radius: 0 5px 0 0;
+}
+.yet{
+    border-radius: 0 0 0 5px;
+}
+.yo{
+    border-radius: 0 0 5px 0;
+}
+h2{
+    font-size: 14px;
+}
+span{
+    font-size:10px;
+}
+.detail{
+    background: rgb(255, 255, 255);
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.top-center{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+.top-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.rate-top,.rate-bottom{
+    display: flex;
+    grid-column: 1/3;
+    color: white;
+}
+
+.left{
+    flex: 0.3;
+    background:rgb(34, 175, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+}
+.le{
+    display: flex;
+    align-items: flex-start;
+    background: rgb(2, 228, 2);
+    border-radius: 0 5px 5px 0;
+}
+.de {
+    background: rgb(4, 55, 242);
+}
+.lel{
+    display: flex;
+    align-items: flex-start;
+    background: rgb(31, 81, 255);
+    border-radius: 0 5px 5px 0;
+}
+.main-center{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/4;
+    gap: 20px;
+}
+.center-left{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+}
+.user-info{
+    display: flex;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info:nth-child(1){
+    border-radius: 5px 5px 0 0;
+}
+.user-info:nth-child(5){
+    border-radius: 0 0 5px 5px;
+}
+.pic{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.number{
+    padding: 10px;
+}
+.one{
+    grid-column: 1/6;
+    padding: 10px;
+}
+.two{
+    grid-column: 1/6;
+}
+.three{
+    grid-column: 1/6;
+}
+.four{
+    grid-column: 1/6;
+}
+.five{
+    grid-column: 1/6;
+}
+.center-rgiht{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.6fr 1fr;
+    gap: 20px;
+}
+.news{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+h6{
+    font-size: 14px;
+}
+.lord2{
+    display: flex;
+    padding: 10px;
+}
+.lord{
+    font-size: 10px;
+}
+.bad{
+    background: rgb(12, 126, 12);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.good{
+    background: rgb(250, 50, 50);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.lord3{
+    margin-top: 5px;
+}
+.lord4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.up{
+    color: green;
+}
+.down{
+    color: red;
+    font-weight: bolder;
+}
+.person{
+    font-size: 10px;
+}
+.main-bottom{
+    background: rgb(255, 255, 255);
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    /* justify-content: space-evenly; */
+}
+.range{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+.day{
+    display: flex;
+}
+.green{
+    margin: 10px;
+    color: green;
+}
+.bo{
+    margin: 10px;
+}
